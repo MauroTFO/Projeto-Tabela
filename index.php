@@ -21,7 +21,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css">
     <link rel="icon" href="https://icongr.am/material/card-account-details-outline.svg?size=128&color=ffffff">
-    <title>Tipes de YAGs</title>
+    <title>Tipes de YAGs</title> 
 </head>
 <body>
     <form action="adicionar.php">   
@@ -37,7 +37,7 @@
     <label class="input">
       <input class="input__field" type="text" placeholder=" " />
       <span class="input__label">Some Fancy Label</span>
-      
+
     </label>
     </form>
     <table class="tabela">
