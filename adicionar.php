@@ -1,13 +1,13 @@
 <?php
 
-$nome = $_GET['nome'];
-$signo = $_GET['signo'];
-$idade = $_GET['idade'];
+$nome = $_POST['nome'];
+$signo = $_POST['signo'];
+$idade = $_POST['idade'];
 
 $file = fopen('armario.csv', 'a');
 
 fwrite($file, "$nome,$signo,$idade\n");
 
-header('location:index.php')
+header('location: index.php')
 
 ?>

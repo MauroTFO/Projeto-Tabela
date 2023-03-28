@@ -11,32 +11,6 @@ body {
     align-items: center;
 }
 
-.nomes {
-    font-family: 'Kanit', sans-serif;
-    margin: 12px;
-}
-
-td {
-    margin-top: 50px;
-}
-
-.tabela {
-    display: flex;
-    align-items: center;
-    height: 150%;
-    margin-top: 120px;
-}
-
-input {
-    border-radius: 3px;
-    width: 200px;
-}
-
-select {
-    border-radius: 3px;
-    width: 210px;
-}
-
 form {
     display: flex;
     align-items: center;
@@ -45,7 +19,7 @@ form {
     width: 100px;
     margin-top: 300px;
     height: 25px;
-    background: rgba(255, 255, 255, 0.384);
+    background: rgba(20, 20, 20, 0.384);
     width: 400px;
     height: 300px;
     display: flex;
@@ -53,11 +27,5 @@ form {
     justify-content: center;
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px; 
-}
-
-.submit {
-    margin-top: 20px;
-    width: 100px;
-    cursor: pointer;
 }
 

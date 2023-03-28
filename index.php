@@ -1,16 +1,16 @@
 <?php
     $signos = [
-        'Áries' => 'Treteiro',
-        'Touro' => 'Come come',
-        'Gêmeos' => 'Instavel',
-        'Câncer' => 'Doido',
-        'Leão' => '',
-        'Virgem' => '',
-        'Escorpião' => '',
-        'Sargitário' => '',
-        'Capricórnio' => '',
-        'Aquário' => '',
-        'Peixes' => ''
+        'Áries' => 'Chato(a)',
+        'Touro' => 'Última bolacha do pacote',
+        'Gêmeos' => 'Rebelde',
+        'Câncer' => 'Gay até demais',
+        'Leão' => 'O que não deita',    
+        'Virgem' => 'Comportado(a)',
+        'Escorpião' => 'Maluco(a)',
+        'Sargitário' => 'Modelo',
+        'Capricórnio' => 'Teimosio(a)',
+        'Aquário' => 'Faz o pix',
+        'Peixes' => 'Acha que sabe de tudo mas não sabe de nada'
     ]
 ?>
 <!DOCTYPE html>
@@ -24,22 +24,18 @@
     <title>Tipes de YAGs</title> 
 </head>
 <body>
-    <form action="adicionar.php">   
-    <input class="nome-input" name="nome" placeholder="Nome" type="text" >
+    <form class="form" action="adicionar.php" method="POST">
+        <input class="nome-input" name="nome" placeholder="Nome" type="text" >
     <select name="signo" id="">
         <?php foreach ($signos as $signo => $car): ?>
             <option value="<?=$signo?>"><?=$signo?></option>
-        <?php endforeach ?>
-    </select>
-    <input placeholder="Idade" name="idade" type="text">
-    <input class="submit" type="submit">
-
-    <label class="input">
-      <input class="input__field" type="text" placeholder=" " />
-      <span class="input__label">Some Fancy Label</span>
-
-    </label>
+            <?php endforeach ?>
+        </select>
+        <input placeholder="Idade" name="idade" type="text">
+        <input class="submit" type="submit">
+        
     </form>
+    <a href="/crud_1/index.php">Tabela de Usuários</a>
     <table class="tabela">
         <?php $table = file('armario.csv') ?>
         <?php foreach($table as $row): ?>
