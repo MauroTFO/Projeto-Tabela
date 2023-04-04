@@ -35,7 +35,12 @@
         <input class="submit" type="submit">
         
     </form>
+    
     <a href="/crud_1/index.php">Tabela de Usuários</a>
+    <h1 class="titulo">Nome</h1>
+    <h1 class="titulo">Signo</h1>
+    <h1 class="titulo">Idade</h1>
+    <h1 class="titulo">Tipo de YAG</h1>
     <table class="tabela">
         <?php $table = file('armario.csv') ?>
         <?php foreach($table as $row): ?>
@@ -44,10 +49,10 @@
                 $chi = $signos[$signo]
             ?>
             <tr>
-            <td><a class="nomes" style="color:red; text-transform:uppercase">Nome: </a> <?= $nome ?></td> 
-            <td><a class="nomes" style="color:red; text-transform:uppercase">Signo: </a> <?= $signo ?></td>
-            <td><a class="nomes" style="color: red; text-transform:uppercase">Idade: </a><?= $idade ?></td>
-            <td><a class="nomes" style="color: red; text-transform:uppercase">Tipo de Yag: </a><?= $chi ?></td>
+            <td><a class="nomes"></a> <?= $nome ?></td> 
+            <td><a class="nomes"></a> <?= $signo ?></td>
+            <td><a class="nomes"></a><?= $idade ?></td>
+            <td><a class="nomes"></a><?= $chi ?></td>
             </tr>
             <?php endforeach ?>
         </table>

@@ -30,6 +30,7 @@
             <input type="text" name="sobrenome" placeholder="Sobrenome">
             <button>Salvar</button>
         </form>
+        <form action="delete"></form>
         <a href="/">Voltar</a>
 </body>
 </html>

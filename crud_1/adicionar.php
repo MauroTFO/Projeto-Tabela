@@ -16,6 +16,7 @@ $sobrenome = $_POST['sobrenome'];
 $fp = fopen('usuarios.csv', 'r');
 while (($row = fgetcsv($fp)) !== false) {
     if ($row[0] == $email) {
+        http_response_code(400);
         echo "E-mail em uso";
         exit();
     }

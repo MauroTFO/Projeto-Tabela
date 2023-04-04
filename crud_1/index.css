@@ -3,7 +3,7 @@
 
 body {
     background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+        background: linear-gradient(circle, rgba(1,1,15,1) 0%, rgba(29,29,52,1) 35%, rgba(68,70,70,1) 100%);
     font-family: 'Kanit', serif;
     font-family: 'Roboto Mono', monospace;
     display: flex;
@@ -11,7 +11,7 @@ body {
     align-items: center;
 }
 
-form {
+.form {
     display: flex;
     align-items: center;
     flex-direction: column;
